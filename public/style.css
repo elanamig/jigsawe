@@ -1,0 +1,18 @@
+.images{
+    white-space: nowrap;
+    align-self: center;
+    width: 700px;
+    overflow: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+    transform: scale(1);
+}
+
+img {
+    padding: .4em;
+}
+
+.images img:hover {
+    transform: scale(1.3);
+}
