@@ -13,7 +13,7 @@ class Topbar extends Component {
     }
 
     getRoomUrl (room) {
-        return `${window.location.href}?room=${room}`;
+        return `${window.location.origin}/?room=${room}`;
     }
 
     copyToClipboard () {

@@ -34265,7 +34265,7 @@ var Topbar = function (_Component) {
     }, {
         key: 'getRoomUrl',
         value: function getRoomUrl(room) {
-            return window.location.href + '?room=' + room;
+            return window.location.origin + '/?room=' + room;
         }
     }, {
         key: 'copyToClipboard',
