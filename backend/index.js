@@ -6,6 +6,7 @@ const socketio = require('socket.io');
 const {generateRoomId, prepareBoard} = require( './util');
 const roomManager = require('./roomManager') ();
 const {URL} = require ('url');
+const PORT = process.env.PORT || 7777
 //const db = require ('./db');
 
 //1.  Sync the db
@@ -41,7 +42,7 @@ app.use ((err, req, res, next) => {
 })
 
 //8. start app
-const server = app.listen (7777, () => console.log("Server is up and running"));
+const server = app.listen (PORT, () => console.log("Server is up and running"));
 
 //9 Set up io
 //const roomState = {};
